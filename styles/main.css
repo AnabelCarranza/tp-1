@@ -1,0 +1,15 @@
+.intro {
+  background-color: #1445b3;
+  padding: 100px 0; }
+  .intro .intro-title {
+    font-size: 48px;
+    font-weight: 700; }
+
+.btn-rounded {
+  border-radius: 100px; }
+
+@media (max-width: 991px) {
+  .intro {
+    text-align: center; } }
+
+/*# sourceMappingURL=main.css.map */
