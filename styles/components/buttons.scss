@@ -1,0 +1,44 @@
+
+.btn-rounded {
+    border-radius: 100px;
+    color: #fff;
+    font-size: 14px;
+    font-family: “Montserrat”, sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+}
+  
+.btn-primary {
+    border: 2px solid #007bff;
+}
+  
+.btn-outline-primary {
+    border: 2px solid #fff;
+}
+
+//  Portfolio
+.button-principal {
+    font-size: 12px;
+    padding: 5px 15px;  
+}
+.button-portfolio {
+    font-size: 12px;
+    padding: 5px 15px;
+    background-color: #ecf5ff;
+    color: #007bff;
+}
+
+//   Testimonials
+.button-items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .item {
+      background-color: #dddddd;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-left: 12px;
+    }
+}

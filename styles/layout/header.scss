@@ -1,0 +1,20 @@
+header {
+    background-color: #fff;
+    padding: 20px 0;
+  }
+  .logo-tp {
+    max-height: 25px;
+  }
+
+  .nav {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .nav-link {
+    color: #004289;
+    &.active {
+      color: #007bff;
+    }
+  }
+  
