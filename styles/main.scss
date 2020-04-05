@@ -1,12 +1,29 @@
+@import "utils/variables";
 @import "layout/footer";
 @import "layout/header";
 @import "components/buttons";
+
+body {
+  background-color: #fff;
+  font-family: $secondary-font;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $main-font;
+}
+
+h2 {
+  font-size: 40px;
+  color: #283d50;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
 .intro {
   background-color: #1445b3;
   padding: 184px 0 140px;
 
   .intro-title {
-    font-family: “Montserrat”, sans-serif;
     font-size: 50px;
     color: #fff;
     font-weight: 700;
@@ -18,69 +35,112 @@
   }
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  
+.container-about {
 
+  line-height: 26px;
+  
+  h4 {
+    font-size: 18px;
+    color: #283d50;
+    font-weight: 600;
+  }
+
+  .about-subtitle {
+    font-size: 24px;
+  }
+
+  p {
+    color: #556877;
+    font-size: 15px;
+  }
+  
   .icon {
     font-size: 25px;
-    color: #007bff;
-    border: 2px solid #007bff;
+    color: $main-color;
+    border: 2px solid $main-color;
     border-radius: 50%;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
-
 }
 
-.container-two {
+.container-service {
     background-color: #ecf5ff;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 
+  
+    p {
+      font-size: 15px;
+      color: #556877;
+    }
     .card {
       box-shadow: 0 10px 30px 0 rgba(68, 88, 144, 0.1);
       border-radius: 10px;
       background-color: #fff;
+
+      .service-icon {
+        
+      }
+
+      .card-title a {
+        font-size: 18px;
+        font-weight: 700;
+        color: #111;
+      }      
     }
 }
 
-.container-three {
+.container-why {
     padding: 60px 0;
-    background-color: #004999;
+    background-color: $secondary-color;
     color: #fff;
+
+    h2 {
+      color: #fff;
+    }
+
+    p{
+      font-size: 15px;
+    }
 
     .box {
         background-color: #00458f;
         border-radius: 10px;
         height: 100%;
-      
+
         .icons {
           font-size: 50px;
           color: #bfddfe;
         }
+        h5 {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1.2;
+        }
+        a {
+          color: #fff;
+        }
     }
 
     .counter {
-      font-size: 45px;
+      font-size: 48px;
+      font-weight: bold;
     }
 
+    p {
+      font-size: 14px;
+      color: #cce5ff;
+    }
+    
 }
 
 // Portfolio
-.container-four {
-    max-width: 1140px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  
+.container-portfolio {
+
   .portfolio-item {
     height: 250px;
     padding-left: 15px;
@@ -96,23 +156,38 @@
   }
 }
 
-.testimonials-container {
-  background-color: #ecf5ff;
+.container-testimonials {
+  background-color: $highlight-color;
   line-height: 1.5;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
   
+  h5 {
+    color: #999;
+    font-size: 14px;
+  }
+
+  p {
+    font-style: italic;
+  }
 
   .img-testimonial {
     border-radius: 50px;
-    width: 120px;
+    width: 100px;
+    margin: auto;
   } 
-}
-.container-six {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 
+  .item-active {
+    color: $main-color;
+  }
+}
+
+.container-team {
+    
   .img-team {
     border-radius: 50%;
     width: 250px;
@@ -121,11 +196,15 @@
 }
 
 
-.clients-container {
-  background-color: #ecf5ff;
-}
+.container-clients {
+  background-color: $highlight-color;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 
-.container {
+  p {
+    font-size: 16px;
+    color: #556877;
+  }
+
   .items-clients {
     border-top: 1px solid #d6eaff;
     border-left: 1px solid #d6eaff; 
@@ -136,6 +215,26 @@
     border-right: 1px solid #d6eaff;
     padding: 64px;
     height: 160px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+.container-contact {
+  
+  .icons {
+    font-size: 22px;
+    color: #007bff;
+    float: left;
+    line-height: 1;
+  }
+
+  p {
+    padding: 0 0 10px 36px;
+    line-height: 28px;
+    font-size: 14px;
+
   }
 }
 
@@ -143,9 +242,7 @@
    .intro {
        text-align: center;
    }
-   .container-four {
-     max-width: 720px;
-   }
+
    .img-team {
      height: 500px;
      width: 500px;
@@ -153,17 +250,9 @@
  }
 
  @media (max-width: 766px) {
-   .container-four {
-     max-width: 535px;
-   }
 
-   .container-five {
-     text-align: center;
+  .items-clients {
+    justify-content: center;
+  }
 
-     .img-testimonial {
-       margin-bottom: 10px;
-     }
-
-   }
  }
-

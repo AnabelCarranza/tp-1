@@ -1,8 +1,52 @@
 .page-footer {
-    background-color: #004999;
-  
-    .footer-copyright {
-      background-color: #004289;
-    }
-  
+  color: #fff;
+  background-color: $secondary-color;
+
+  h5 {
+    font-size: 34px;
+    letter-spacing: 3px;
+    font-weight: 400;
   }
+
+  h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .list-unstyled a {
+    font-size: 13px;
+    color: $highlight-color;
+    font-weight: 100;
+  }
+
+  p {
+    font-size: 13px;
+    color: $highlight-color;
+    font-weight: 100;
+  }
+
+  .social-links {
+    display: flex;
+
+    a {
+      font-size: 18px;
+      background-color: $main-color;
+      color: #fff;
+      border-radius: 50%;
+      padding: 8px;
+      margin-right: 4px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .footer-copyright {
+    background-color: #004289;
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
